@@ -5,7 +5,7 @@ import InputFatec from './components/input-fatec'
 function App() {
   return (
     <form>
-      <p>Olá Mundo</p>
+      <p>Formulário</p>
       <InputFatec type='text' value='' placeholder='Digite seu nome' />
       <br />
       <InputFatec type='text' value='' placeholder='Digite seu e-mail' />
