@@ -1,14 +1,16 @@
-import Footer from "../../components/footer"
 import TabelaAtividade from "../../components/tabela-atividades"
-import '../../App.css'
+import Layout from "../../components/layout"
+import { Box, Heading } from "@chakra-ui/react"
 
-function Tarefas(){
-    return(
-        <div>
-            <h1>Tarefas</h1>
+function Tarefas() {
+    return (
+        <Layout>
+            <Box py={5}> 
+                <Heading as='h2' size='2xl'>Tarefas</Heading>
+                <hr />
+            </Box>
             <TabelaAtividade />
-            <Footer page="tarefas" />
-        </div>        
+        </Layout>
     )
 }
 

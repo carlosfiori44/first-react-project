@@ -1,13 +1,9 @@
-import { Link } from "react-router-dom";
-import Footer from "../../components/footer";
-import '../../App.css'
+import NotFoundComponent from '../../components/erro-404'
 
 function NotFound(){
     return(
         <>
-            <h1>404</h1>
-            <p>Página não encontrada</p>
-            <Footer page="" />
+            <NotFoundComponent />
         </>
     )
 }

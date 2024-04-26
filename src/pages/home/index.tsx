@@ -1,19 +1,18 @@
-import { Link, useNavigate } from "react-router-dom"
-import Footer from "../../components/footer"
-import '../../App.css'
+import Layout from "../../components/layout"
+import SecaoArtigo from "../../components/secao-artigo"
+import { Heading } from "@chakra-ui/react"
 
-function Home(){
-    const navigate = useNavigate()
-
+function Home() {
     return (
-        <div>
-            <h1 onClick={() => {navigate('/sobre')}}>Home</h1>
-            <p>Esse projeto tem como objetivo demonstrar os recursos oferecidos pelo 
-                React, utilizando um padrão de organização de pastas por recursos e páginas
+        <Layout>
+            <Heading>Home</Heading>
+            <p>
+                <SecaoArtigo>
+                    Esse projeto tem como objetivo demonstrar os recursos oferecidos pelo
+                    React, utilizando um padrão de organização de pastas por recursos e páginas
+                </SecaoArtigo>
             </p>
-
-            <Footer page="home" />
-        </div>
+        </Layout>
 
     )
 }
